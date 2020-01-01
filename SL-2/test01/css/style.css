@@ -9,9 +9,193 @@ html {
 
 body {
   font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  color: #333;
 }
 
 a {
   text-decoration: none;
+  color: #d03c56;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 28px 0 10px;
+  background: url(../images/bg-header.gif) repeat-x;
+  -webkit-box-shadow: 0 0 10px 1px #e3e3e3;
+          box-shadow: 0 0 10px 1px #e3e3e3;
+}
+
+.header_logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto 15px;
+  background: url(../images/logo.png);
+  text-align: center;
+}
+
+.header_nav_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_nav_box_item, .header_nav_box_item_activ {
+  width: 100px;
+  margin: 0 12px;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header_nav_box_item:hover, .header_nav_box_item_activ:hover {
+  background-color: #d03c56;
+}
+
+.header_nav_box_item:hover a, .header_nav_box_item_activ:hover a {
+  color: #fff;
+}
+
+.header_nav_box_item a, .header_nav_box_item_activ a {
+  color: #666;
+}
+
+.header_nav_box_item_activ {
+  background-color: #d03c56;
+  color: #fff;
+}
+
+.header_nav_box_item_activ a {
+  color: #fff;
+}
+
+.contentsWrapper {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.main_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_box_mainArea {
+  width: 660px;
+}
+
+.main_box_mainArea_hotTpic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.main_box_mainArea_hotTpic a, .main_box_mainArea_hotTpic img {
+  display: block;
+}
+
+.main_box_mainArea_hotTpic_img {
+  width: 50%;
+}
+
+.main_box_mainArea_hotTpic_txt {
+  width: 50%;
+  background-color: #2d3d54;
+}
+
+.main_box_mainArea_hotTpic_txt a {
+  height: 100%;
+}
+
+.main_box_mainArea_hotTpic_txt_day {
+  display: inline-block;
+  width: 140px;
+  margin: 60px 0 30px;
+  padding: 4px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d3d54;
+  background: #fff;
+}
+
+.main_box_mainArea_hotTpic_txt_ttl, .main_box_mainArea_hotTpic_txt_desc {
+  display: block;
+  padding: 0 25px 15px;
+  font-size: 2.0rem;
+  color: #fff;
+}
+
+.main_box_mainArea_hotTpic_txt_desc {
+  padding-bottom: 0;
+  font-size: 1.2rem;
+  color: #ddddcc;
+}
+
+.main_box .newsArea .contentsTtl {
+  padding: 10px 12px;
+  font-size: 1.6rem;
+  background: url(../images/bg-slash.gif);
+}
+
+.main_box .newsArea_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+.main_box .newsArea_box:nth-child(odd) {
+  background: url(../images/bg-slash.gif);
+}
+
+.main_box .newsArea_box_item {
+  width: 19%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+.main_box .newsArea_box_item_newsI, .main_box .newsArea_box_item_topicI {
+  width: 8%;
+  margin-right: 15px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.main_box .newsArea_box_item_topicI {
+  background-color: #d03c56;
+}
+
+.main_box .newsArea_box_item_txt {
+  width: 73%;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main_box_subArea {
+  width: 275px;
 }
 /*# sourceMappingURL=style.css.map */
