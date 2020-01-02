@@ -255,7 +255,6 @@ optgroup,
 select,
 textarea {
   color: inherit; /* 1 */
-  font: inherit; /* 2 */
   margin: 0; /* 3 */
 }
 
@@ -429,6 +428,7 @@ th {
 /* 追加 */
 ul,ol,li {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -437,6 +437,6 @@ ul,ol,li {
   box-sizing: border-box
 }
 
-h1,h2,ul,p {
+h1,h2,ul,p,dl,dt,dd {
   margin: 0;
 }
