@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  color: #333;
+  background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
