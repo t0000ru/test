@@ -15,3 +15,158 @@ img {
   width: 100%;
   height: auto;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+// <header>
+.header {
+  padding: 170px 30px 90px;
+  letter-spacing: 0.1em;
+  color: #fff;
+
+  &_hedTtl {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    &::before,&::after {
+      content: "";
+      display: inline-block;
+      width: 140px;
+      height: 1px;
+      margin: 0 20px;
+      border: 1px solid #fff;
+      vertical-align: middle;
+    }
+  }
+  &_mainTtl {
+    margin-bottom: 40px;
+    font-size: 7.6rem;
+    font-weight: 700;
+  }
+  &_footTtl {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    color: #888;
+  }
+  &_box {
+    display: flex;
+    justify-content: center;
+    &_item {
+      width: 200px;
+      display: block;
+      margin: 0 15px;
+      padding: 20px 0;
+      font-size: 1.2rem;
+      background-color: gray;
+      border-radius: 5px;
+      transition: opacity .3s;
+      &:hover {
+        opacity: .8;
+      }
+      &_oreng {
+        @extend .header_box_item;
+        background-color: orange;
+      }
+    }
+  }
+}
+// </header>
+
+// <main>
+.contentsTtl {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  letter-spacing: 0.05em;
+  font-size: 4.0rem;
+  font-weight: 700;
+  position: relative;
+  &.worksTtl {
+    margin-bottom: 70px;
+  }
+  &::before,&::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    border-bottom: 1px solid #333;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &.white {
+    &.contentsTtl::before,&.contentsTtl::after {
+      border-color: #fff;
+    }
+  }
+}
+// <ABOUT ME>
+.about {
+  padding: 110px 0;
+  background-color: #fff;
+  &_txt {
+    font-size: 1.4rem;
+    line-height: 2.5;
+    &_hed {
+      @extend .about_txt;
+      margin-bottom: 40px;
+    }
+  }
+}
+// </ABOUT ME>
+
+// <works>
+.works {
+  padding: 110px 0 80px;
+  color: #fff;
+  background-color: #373634;
+  &_box {
+    display: flex;
+    width: (100%/4);
+    flex-direction: column;
+    &:nth-of-type(odd) {
+      flex-direction: column-reverse;
+    }
+    &_item {
+      & img {
+        display: block;
+      }
+      &.desc {
+        position: relative;
+        & img {
+          filter: opacity(20%);
+        }
+      }
+      &_desc {
+        display: inline-block;
+        width: 100%;
+        line-height: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        & p {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 20px;
+          font-size: 1.2rem;
+        }
+        & a {
+          display: inline-block;
+          width: 60%;
+          padding: 3px;
+          border: 1px solid #fff;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+.box_container {
+  display: flex;
+}
+// <works>
+// </main>

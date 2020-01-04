@@ -13,13 +13,13 @@
 
 <body>
   <!-- <header> -->
-  <header>
-    <p>Web designer's portfolio</p>
-    <h1>HI, MY NAME IS...</h1>
-    <p>Check out some of my works.</p>
-    <div>
-      <a href="/">LEARN MORE</a>
-      <a href="/">SEND MESSAGE</a>
+  <header class="header">
+    <p class="header_hedTtl">Web designer's portfolio</p>
+    <h1 class="header_mainTtl">HI, MY NAME IS...</h1>
+    <p class="header_footTtl">Check out some of my works.</p>
+    <div class="header_box">
+      <a class="header_box_item" href="/">LEARN MORE</a>
+      <a class="header_box_item_oreng" href="/">SEND MESSAGE</a>
     </div>
   </header>
   <!-- </header> -->
@@ -27,27 +27,59 @@
   <!-- <main> -->
   <main>
     <!-- <article ABOUT ME> -->
-    <article>
-      <div>
-        <h2>ABOUT ME</h2>
-        <p>はじめまして。日本でWebデザイナーをしています。<br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
-        <p>
-          このサイトは「HTML/CSSモダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br>このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
-        </p>
-      </div>
+    <article class="about">
+      <h2 class="contentsTtl">ABOUT ME</h2>
+      <p class="about_txt_hed">はじめまして。日本でWebデザイナーをしています。<br>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
+      <p class="about_txt">
+        このサイトは「HTML/CSSモダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br>このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+      </p>
     </article>
     <!-- </article ABOUT ME> -->
 
     <!-- <section WORKS> -->
-    <section>
-      <div>
-        <h2>WORKS</h2>
-        <div>
-          <dl>
-            <dt></dt>
-            <dd></dd>
-          </dl>
-        </div>
+    <section class="works">
+      <h2 class="contentsTtl white worksTtl">WORKS</h2>
+      <div class="box_container">
+        <ul class="works_box">
+          <img src="images/tree.jpg" alt="">
+          <li class="works_box_item desc">
+            <img src="images/tree_2.jpg" alt="">
+            <span class="works_box_item_desc">
+              <p>ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX</p>
+              <a href="/">READ MORE</a>
+            </span>
+          </li>
+        </ul>
+        <ul class="works_box">
+          <img src="images/building.jpg" alt="">
+          <li class="works_box_item desc">
+            <img src="images/building_2.jpg" alt="">
+            <span class="works_box_item_desc">
+              <p>ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX</p>
+              <a href="/">READ MORE</a>
+            </span>
+          </li>
+        </ul>
+        <ul class="works_box">
+          <img src="images/lake.jpg" alt="">
+          <li class="works_box_item desc">
+            <img src="images/lake_2.jpg" alt="">
+            <span class="works_box_item_desc">
+              <p>みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX</p>
+              <a href="/">READ MORE</a>
+            </span>
+          </li>
+        </ul>
+        <ul class="works_box">
+          <img src="images/sky.jpg" alt="">
+          <li class="works_box_item desc">
+            <img src="images/sky_2.jpg" alt="">
+            <span class="works_box_item_desc">
+              <p>よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：XXX, XXX, XXX</p>
+              <a href="/">READ MORE</a>
+            </span>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- </section WORKS> -->
