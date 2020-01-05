@@ -169,4 +169,86 @@ a {
   display: flex;
 }
 // <works>
+
+// <skills>
+.skills {
+  padding: 110px 0 80px;
+  background-color: #fff;
+  &_box {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    &_item {
+      width: (100%/3);
+      &_icon {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+        line-height: 142px;
+        font-size: 8.0rem;
+        color: #f1b400;
+        border: 4px solid #f1b400;
+        border-radius: 50%;
+      }
+      &_ttl {
+        margin-bottom: 30px;
+        font-size: 2.0rem;
+      }
+      &_txt {
+        line-height: 2;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+// </skills>
+
+// <contact>
+.contact {
+  padding: 110px 0 150px;
+  color: #fff;
+  &_box {
+    width: 50%;
+    margin: 50px auto 0;
+    &_name {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 15px;
+      color: #fff;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 0;
+      background-color: rgba(255, 255, 255, 0.05);
+      &:focus {
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+      }
+    }
+    &_message {
+      @extend .contact_box_name;
+      margin-bottom: 40px;
+    }
+    &_btn {
+      display: inline-block;
+      width: (200px/1300px*100vw);
+      margin: 0 auto;
+      padding: 15px 0;
+      color: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      background-color: transparent;
+    }
+  }
+}
+// </contact>
 // </main>
+
+// <footer>
+footer {
+  .copyright {
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+}
+// </footer>

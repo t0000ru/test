@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>singlepage-layout</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -85,29 +86,42 @@
     <!-- </section WORKS> -->
 
     <!-- <article MY SKILLS> -->
-    <article>
-      <div>
-        <h2>MY SKILLS</h2>
-        <dl>
-          <dt></dt>
-          <dd>
-            <p>IDEA</p>
-            <p>何かを考えることが好きです。新しいことを思いついては試しています。ディレクションの経験もあります。</p>
-          </dd>
-        </dl>
-      </div>
+    <article class="skills">
+      <h2 class="contentsTtl">MY SKILLS</h2>
+      <ul class="skills_box">
+        <li class="skills_box_item">
+          <i class="skills_box_item_icon far fa-lightbulb"></i>
+          <p class="skills_box_item_ttl">IDEA</p>
+          <p class="skills_box_item_txt">何かを考えることが好きです。<br>
+            新しいことを思いついては試しています。<br>
+            ディレクションの経験もあります。</p>
+        </li>
+        <li class="skills_box_item">
+          <i class="skills_box_item_icon fas fa-paint-brush"></i>
+          <p class="skills_box_item_ttl">DESIGN</p>
+          <p class="skills_box_item_txt">見た目の綺麗さだけじゃなくて、<br>
+            使いやすさ、情報の伝わりやすさなど、<br>
+            その先まで考えることを意識しています。</p>
+        </li>
+        <li class="skills_box_item">
+          <i class="skills_box_item_icon fas fa-code"></i>
+          <p class="skills_box_item_ttl">CODING</p>
+          <p class="skills_box_item_txt">HTML/CSSコーディングも行います。<br>
+            正しく美しいマークアップと、<br>
+            今後の変更への強さを考慮しています。</p>
+        </li>
+      </ul>
     </article>
     <!-- </article MY SKILLS> -->
 
     <!-- <article CONTACT> -->
-    <article>
-      <div>
-        <form>
-          <input type="text" name="name" placeholder="NAME">
-          <textarea name="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-          <input type="submit" value="SEND">
-        </form>
-      </div>
+    <article class="contact">
+      <h2 class="contentsTtl white">CONTACT</h2>
+      <form class="contact_box">
+        <input class="contact_box_name" type="text" name="name" placeholder="NAME">
+        <textarea class="contact_box_message" name="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+        <input class="contact_box_btn" type="submit" value="SEND">
+      </form>
     </article>
     <!-- </article CONTACT> -->
   </main>
@@ -115,7 +129,7 @@
 
   <!-- <footer> -->
   <footer>
-    <p>&copy; sample site</p>
+    <p class="copyright">&copy; sample site</p>
   </footer>
   <!-- </footer> -->
 </body>

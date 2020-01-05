@@ -196,4 +196,90 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+
+.skills {
+  padding: 110px 0 80px;
+  background-color: #fff;
+}
+
+.skills_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills_box_item {
+  width: 33.33333%;
+}
+
+.skills_box_item_icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  line-height: 142px;
+  font-size: 8.0rem;
+  color: #f1b400;
+  border: 4px solid #f1b400;
+  border-radius: 50%;
+}
+
+.skills_box_item_ttl {
+  margin-bottom: 30px;
+  font-size: 2.0rem;
+}
+
+.skills_box_item_txt {
+  line-height: 2;
+  font-size: 1.4rem;
+}
+
+.contact {
+  padding: 110px 0 150px;
+  color: #fff;
+}
+
+.contact_box {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact_box_name, .contact_box_message {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  color: #fff;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact_box_name:focus, .contact_box_message:focus {
+  -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact_box_message {
+  margin-bottom: 40px;
+}
+
+.contact_box_btn {
+  display: inline-block;
+  width: 15.38462vw;
+  margin: 0 auto;
+  padding: 15px 0;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+footer .copyright {
+  padding-bottom: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
