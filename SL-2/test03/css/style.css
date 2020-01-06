@@ -11,6 +11,18 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -21,15 +33,51 @@ a {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .sp_only {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .sp_only {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .pc_only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .pc_only {
+    display: block;
+  }
+}
+
 .header {
   padding: 170px 30px 90px;
   letter-spacing: 0.1em;
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding-top: 60px;
+  }
+}
+
 .header_hedTtl {
   margin-bottom: 50px;
   font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+  .header_hedTtl {
+    font-size: 1.7rem;
+  }
 }
 
 .header_hedTtl::before, .header_hedTtl::after {
@@ -42,16 +90,37 @@ a {
   vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+  .header_hedTtl::before, .header_hedTtl::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
 .header_mainTtl {
   margin-bottom: 40px;
   font-size: 7.6rem;
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .header_mainTtl {
+    font-size: 5.3rem;
+  }
+}
+
 .header_footTtl {
   margin-bottom: 50px;
   font-size: 1.6rem;
   color: #888;
+}
+
+@media (max-width: 768px) {
+  .header_footTtl {
+    letter-spacing: normal;
+    margin-bottom: 60px;
+  }
 }
 
 .header_box {
@@ -61,6 +130,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .header_box {
+    display: block;
+  }
 }
 
 .header_box_item, .header_box_item_oreng {
@@ -73,6 +148,15 @@ a {
   border-radius: 5px;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
+}
+
+@media (max-width: 768px) {
+  .header_box_item, .header_box_item_oreng {
+    margin: 0 auto;
+  }
+  .header_box_item.header_box_item:first-of-type, .header_box_item_oreng:first-of-type {
+    margin-bottom: 20px;
+  }
 }
 
 .header_box_item:hover, .header_box_item_oreng:hover {
@@ -91,6 +175,13 @@ a {
   font-size: 4.0rem;
   font-weight: 700;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .contentsTtl {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
 }
 
 .contentsTtl.worksTtl {
@@ -115,13 +206,25 @@ a {
 }
 
 .about {
-  padding: 110px 0;
+  padding: 110px 30px;
   background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 30px;
+  }
 }
 
 .about_txt, .about_txt_hed {
   font-size: 1.4rem;
   line-height: 2.5;
+}
+
+@media (max-width: 768px) {
+  .about_txt, .about_txt_hed {
+    line-height: 1.8;
+  }
 }
 
 .about_txt_hed {
@@ -143,6 +246,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .works_box {
+    width: 100%;
+  }
 }
 
 .works_box:nth-of-type(odd) {
@@ -204,8 +313,14 @@ a {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .box_container {
+    display: block;
+  }
+}
+
 .skills {
-  padding: 110px 0 80px;
+  padding: 110px 0 120px;
   background-color: #fff;
 }
 
@@ -217,8 +332,26 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .skills_box {
+    display: block;
+  }
+}
+
 .skills_box_item {
   width: 33.33333%;
+}
+
+@media (max-width: 768px) {
+  .skills_box_item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills_box_item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .skills_box_item_icon {
@@ -232,9 +365,25 @@ a {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .skills_box_item_icon {
+    font-size: 5.0rem;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    line-height: 92px;
+  }
+}
+
 .skills_box_item_ttl {
   margin-bottom: 30px;
   font-size: 2.0rem;
+}
+
+@media (max-width: 768px) {
+  .skills_box_item_ttl {
+    margin-bottom: 20px;
+  }
 }
 
 .skills_box_item_txt {
@@ -250,6 +399,12 @@ a {
 .contact_box {
   width: 50%;
   margin: 50px auto 0;
+}
+
+@media (max-width: 768px) {
+  .contact_box {
+    width: 80%;
+  }
 }
 
 .contact_box_name, .contact_box_message {
@@ -275,7 +430,7 @@ a {
 
 .contact_box_btn {
   display: inline-block;
-  width: 15.38462vw;
+  width: 200px;
   margin: 0 auto;
   padding: 15px 0;
   color: rgba(255, 255, 255, 0.5);
