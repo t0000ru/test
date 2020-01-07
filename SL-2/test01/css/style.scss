@@ -204,7 +204,7 @@ a {
     margin-bottom: 70px;
     & a {
       display: block;
-      width: (315px/1450px*100vw);
+      width: 48%;
       padding-bottom: 15px;
       box-shadow: 2px 2px 4px gray;
       transition: .5s;
@@ -264,7 +264,7 @@ a {
       &_box {
         counter-reset: ranking;
         margin-bottom: 30px;
-        & a{
+        & a {
           display: block;
           &:not(:last-child) {
             margin-bottom: 15px;
@@ -280,12 +280,12 @@ a {
           }
 
           &_img {
-            width: 55px;
+            width: 20%;
           }
 
           &_number {
             display: block;
-            width: 44px;
+            width: 18px;
             height: 18px;
             margin: 0 10px;
             font-weight: 700;
@@ -319,6 +319,7 @@ a {
           }
 
           &_txt {
+            width: 70%;
             font-size: 1.2rem;
             color: #000;
             line-height: 1.5;

@@ -232,7 +232,7 @@ a {
 
 .main_box .tipsArea a {
   display: block;
-  width: 21.72414vw;
+  width: 48%;
   padding-bottom: 15px;
   -webkit-box-shadow: 2px 2px 4px gray;
           box-shadow: 2px 2px 4px gray;
@@ -323,12 +323,12 @@ a {
 }
 
 .main_box_subArea .ranking_box_item_img {
-  width: 55px;
+  width: 20%;
 }
 
 .main_box_subArea .ranking_box_item_number {
   display: block;
-  width: 44px;
+  width: 18px;
   height: 18px;
   margin: 0 10px;
   font-weight: 700;
@@ -365,6 +365,7 @@ a {
 }
 
 .main_box_subArea .ranking_box_item_txt {
+  width: 70%;
   font-size: 1.2rem;
   color: #000;
   line-height: 1.5;
