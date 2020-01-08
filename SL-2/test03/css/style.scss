@@ -187,16 +187,20 @@ a {
   &_box {
     display: flex;
     width: (100%/4);
+    flex-direction: column;
     @media (max-width: 768px) {
       width: 100%;
+      img {
+        min-height: 0%;
+      }
     }
-    flex-direction: column;
     &:nth-of-type(odd) {
       flex-direction: column-reverse;
     }
     &_item {
       & img {
         display: block;
+        min-height: 0%;
       }
       &.desc {
         position: relative;

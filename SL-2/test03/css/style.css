@@ -252,6 +252,9 @@ a {
   .works_box {
     width: 100%;
   }
+  .works_box img {
+    min-height: 0%;
+  }
 }
 
 .works_box:nth-of-type(odd) {
@@ -263,6 +266,7 @@ a {
 
 .works_box_item img {
   display: block;
+  min-height: 0%;
 }
 
 .works_box_item.desc {
